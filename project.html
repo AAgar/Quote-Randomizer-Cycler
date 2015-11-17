@@ -1,0 +1,32 @@
+<!-- This is the actual code that you can copy and paste wherever you like. The <p> paragraph element is where the 
+cycled text will appear, but you can place the  <script type="text/javascript">getText(); </script> wherever you want 
+the cycled text to be displayed.-->
+
+<script type="text/javascript">
+    function getText() {
+      text = new Array(6);
+      speaker = new Array(6);
+      text[0] = "When in doubt, use brute force.";
+      speaker[0] = "Ken Thompson";
+      text[1] = "If you want to go somewhere, goto is the best way to get there.";
+      speaker[1] = "Ken Thompson";
+      text[2] = "I'd rather be hated for who I am, than loved for who I am not";
+      speaker[2] = "Kurt Cobain";
+      text[3] = "Unix is simple. It just takes a genius to understand its simplicity";
+      speaker[3] = "Dennis Ritchie";
+	  text[4] = "You want them to kill for you. No, I want them to die for me.";
+      speaker[4] = "Arrow";
+	  text[5] = "If you're the smartest one in the room, you're in the wrong room.";
+      speaker[5] = "Richard Tirendi- Also spoken by Michael Dell";
+      i = Math.floor(Math.random() * text.length);
+      document.write("<dl style='text-align:center;font-family:Open Sans, sans-serif;font-size:1.7em;'>\n");
+      document.write("<dt>" + "\"<i>" + text[i] + "</i>\"\n");
+      document.write("<dd>" + "- " + speaker[i] + "\n");
+      document.write("<dl>\n");
+    }
+  </script>
+<p style="text-align:center"> 
+    <script type="text/javascript">
+      getText();
+    </script>
+</p>
