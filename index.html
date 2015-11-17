@@ -1,9 +1,7 @@
-<div id="0" class="gr2" style="background-height:1000px;;">
-<h2 style="text-align:center;"> Hello World, </h2>
-
+<div id="0" class="gr2" style="background-height:1000px;">
+	<h3 class="<span class="color">Q</span><span class="color">u</span><span class="color">o</span><span class="color">t</span><span class="color">e</span><span class="color">s</span></h3>
 <p>The following quotes change upon each refresh of the page using a bit of javascript and html.</p>
-<div class="jumbotron" style="font-family: 'Open Sans', sans-serif;">
-<h3 class="<span class="color">Q</span><span class="color">u</span><span class="color">o</span><span class="color">t</span><span class="color">e</span><span class="color">s</span></h3>
+
 
 <style type="text/css">
 .color:hover {
@@ -68,6 +66,9 @@ color:white;
       speaker[5] = "Richard Tirendi- Also spoken by Michael Dell";
       i = Math.floor(Math.random() * text.length);
       document.write("<dl style='text-align:center;font-size:1.3em;'>\n");
+      document.write("<dt>" + "\"<i>" + text[i] + "</i>\"\n");
+      document.write("<dd>" + "- " + info[i] + "\n");
+      document.write("<dl>\n");
     }
   </script>
 <p style="text-align:center"> 
